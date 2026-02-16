@@ -1,281 +1,325 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Mari Luz estética y bienestar",
+  logo: "/images/logo.png",
+  tagline: "Tu centro de estética y bienestar en Albacete",
+  description: "Mari Luz estética y bienestar es tu centro de confianza en Albacete con 4.5 estrellas y más de 52 reseñas. Especialistas en manicura, tratamientos faciales, depilación láser, cejas y mucho más. Un equipo cercano y profesional que te hace sentir como en casa desde el primer momento. Flexibilidad horaria y atención personalizada para cuidarte como te mereces.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#c9b595",
+    secondary: "#3c362d",
+    accent: "#e8e7cd",
+    neutral: "#fbf9f7"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
+  phone: "663 94 38 57",
+  whatsapp: "+34663943857",
   whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "C. Prta de Murcia, 15, 02002 Albacete, España",
+    city: "Albacete",
+    province: "",
+    postalCode: "02002",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=896645541841365764&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Mari%20Luz%20est%C3%A9tica%20y%20bienestar%20%4038.989%2C-1.85002&z=16&output=embed",
+  coordinates: {
+    lat: 38.989,
+    lng: -1.85002
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes",
+      hours: "15:30–19:00"
+    },
+    {
+      days: "martes - viernes",
+      hours: "9:30–13:30, 15:30–19:00"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 4.5,
+    count: 52,
+    url: "https://maps.google.com/?cid=896645541841365764&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
     featured: [
       {
-        author: "Eva León",
+        author: "Elisabeth Fernandez Montes",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Soy clienta desde hace años. Me encantan. Si no tienen cita hacen lo posible p poder atenderte en cuanto tienen hueco disponible. Por poner un pero, es que me gustaría que hubiese más distancia física entre cliente y cliente a la hora de hacer la manicura. El local esta limpio y las chicas muy profesionales.",
+        date: "Hace 3 años"
       },
       {
-        author: "Javier Padilla",
+        author: "Carla Carla",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Esta mañana he ido a que me hicieran las cejas y el labio, no tenia cita, me han hecho un hueco, me han dejado las cejas perfectas, rápido, bien y aun encima buen precio. Mención a parte lo maja que era la chica que me ha atendido. Volveré.",
+        date: "Hace 5 años"
       },
       {
-        author: "Melanie Ponce",
+        author: "izanproasito 2008",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Llevo como dos meses haciéndome las uñas y estoy encantada,son un amor de chicas y muy cercanas,desde el primer momento te hacen sentir confianza.Ademas hacen tratamientos faciales,laser...bueno lo tienes todo aquí.Para mi,muy buenas!",
+        date: "Hace un año"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Rosa Martínez",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Me la recomendo una amiga, y la verdad que estoy encantada.. Las recomiendo 100%..Son muy agradables y da gusto hacerte cosas con ellas te miman mucho.. Gracias chicas",
+        date: "Hace un año"
       },
-    ],
+      {
+        author: "Ermen Argueta",
+        rating: 5,
+        text: "Una experiencia inolvidable . Sitio muy hermoso",
+        date: "Hace 8 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "manicura-pedicura",
+      name: "Manicura y Pedicura",
+      description: "Cuidado completo de manos y pies con productos de alta calidad y acabados impecables. Nuestras clientas destacan la profesionalidad y el ambiente acogedor de nuestro servicio. Disfruta de uñas perfectas con esmaltes duraderos y técnicas que realzan tu belleza natural.",
+      benefits: [
+        "Equipo especializado con años de experiencia",
+        "Ambiente limpio y profesional",
+        "Resultados duraderos y naturales"
+      ],
+      icon: "Hand"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
-    },
-    {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "cejas-labio",
+      name: "Diseño de Cejas y Depilación Facial",
+      description: "Perfilado y diseño de cejas personalizado para realzar tu mirada. Depilación de labio y otras zonas faciales con técnicas rápidas y precisas. Nuestras clientas valoran especialmente la perfección en el resultado y la rapidez del servicio, todo a precios muy competitivos.",
+      benefits: [
+        "Cejas perfectamente perfiladas",
+        "Servicio rápido sin perder calidad",
+        "Excelente relación calidad-precio"
+      ],
+      icon: "Eye"
     },
     {
       id: "tratamientos-faciales",
       name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      description: "Cuidados personalizados para cada tipo de piel con productos premium. Tratamientos de hidratación profunda, antiedad y luminosidad que transforman tu rostro. Te mimamos con protocolos adaptados a tus necesidades específicas para resultados visibles desde la primera sesión.",
+      benefits: [
+        "Diagnóstico personalizado de tu piel",
+        "Productos de alta gama",
+        "Resultados visibles y duraderos"
+      ],
+      icon: "Sparkles"
+    },
+    {
+      id: "depilacion-laser",
+      name: "Depilación Láser",
+      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos para todas las zonas del cuerpo. Olvídate del vello no deseado de forma permanente con sesiones cómodas y resultados progresivos.",
+      benefits: [
+        "Tecnología láser avanzada",
+        "Eliminación progresiva y definitiva",
+        "Tratamiento adaptado a tu fototipo"
+      ],
+      icon: "Zap"
     },
     {
       id: "tratamientos-corporales",
       name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      description: "Programas reductores, reafirmantes y anticelulíticos diseñados para modelar tu silueta. Combinamos técnicas manuales con tecnología avanzada para resultados efectivos. Recupera la firmeza y tonifica tu cuerpo con tratamientos que realmente funcionan.",
+      benefits: [
+        "Tratamientos personalizados",
+        "Tecnología de última generación",
+        "Seguimiento de resultados"
+      ],
+      icon: "Heart"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "micropigmentacion",
+      name: "Micropigmentación",
+      description: "Maquillaje semipermanente para cejas, labios y ojos con acabados naturales y favorecedores. Despierta perfecta cada mañana sin necesidad de maquillarte. Técnicas de última tendencia que respetan la armonía de tu rostro.",
+      benefits: [
+        "Resultados naturales y armoniosos",
+        "Ahorra tiempo en tu rutina diaria",
+        "Pigmentos de máxima calidad"
+      ],
+      icon: "Flower2"
     },
     {
       id: "extensiones-pestanas",
       name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      description: "Mirada impactante con extensiones pelo a pelo aplicadas con precisión. Luce pestañas largas y voluminosas de forma natural y duradera. Técnica segura que respeta la salud de tus pestañas naturales.",
+      benefits: [
+        "Aplicación pelo a pelo profesional",
+        "Mirada intensa y natural",
+        "Larga duración con mantenimiento"
+      ],
+      icon: "Eye"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "asesoramiento-belleza",
+      name: "Asesoramiento Integral",
+      description: "Te ayudamos a diseñar tu plan de belleza personalizado combinando los tratamientos que mejor se adaptan a ti. En Mari Luz tienes todo lo que necesitas en un solo lugar, con un equipo que te hace sentir confianza desde el primer momento.",
+      benefits: [
+        "Plan de tratamientos a tu medida",
+        "Todos los servicios en un centro",
+        "Trato cercano y profesional"
+      ],
+      icon: "Heart"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Contacta con Nosotras",
+      description: "Llámanos al 663 94 38 57 o escríbenos por WhatsApp. Hacemos todo lo posible por encontrarte hueco incluso sin cita previa, porque sabemos que tu tiempo es valioso."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Primera Consulta Personalizada",
+      description: "Te recibimos en nuestro centro limpio y acogedor de Albacete. Analizamos tus necesidades y te asesoramos sobre los tratamientos más adecuados para conseguir los resultados que buscas."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tu Tratamiento de Belleza",
+      description: "Realizamos tu tratamiento con profesionalidad, productos premium y la última tecnología. Nuestro equipo cercano te hace sentir cómoda y confiada en todo momento, mimándote como te mereces."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Disfruta de los Resultados",
+      description: "Sal de Mari Luz radiante y satisfecha. Te damos recomendaciones para mantener los resultados y te esperamos en tu próxima visita. La confianza que generamos hace que nuestras clientas vuelvan durante años."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Avaladas por Nuestras Clientas",
+      description: "Más de 52 reseñas con 4.5 estrellas en Google nos avalan. Nuestras clientas destacan la profesionalidad, el trato cercano y los resultados visibles. Muchas llevan años confiando en nosotras porque generamos confianza desde el primer momento y nos preocupamos por mimar a cada persona.",
+      icon: "Sparkles"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Flexibilidad y Atención Personalizada",
+      description: "Hacemos todo lo posible por atenderte incluso sin cita previa, porque entendemos que tu tiempo es valioso. En Mari Luz te adaptamos los horarios y te buscamos hueco para que puedas cuidarte cuando lo necesites. Esta flexibilidad es una de las razones por las que nuestras clientas nos recomiendan.",
+      icon: "Heart"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Equipo Profesional y Cercano",
+      description: "Nuestro equipo combina profesionalidad con un trato humano excepcional. Te hacemos sentir cómoda y confiada desde la primera visita. Las chicas de Mari Luz son cercanas, majas y expertas en lo que hacen, creando un ambiente donde te sientes cuidada y mimada en cada tratamiento.",
+      icon: "Flower2"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Centro Completo en Albacete",
+      description: "Lo tienes todo en un solo lugar: manicura, pedicura, cejas, tratamientos faciales, láser, corporales y más. Un centro limpio y acogedor en Albacete donde realizar todos tus tratamientos de belleza sin necesidad de ir a varios sitios. Comodidad, calidad y buenos precios en un único espacio.",
+      icon: "Zap"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Equipo de Mari Luz estética y bienestar",
+      role: "Especialistas en Estética",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Profesionales apasionadas por la belleza y el cuidado personal. En Mari Luz estética y bienestar nos dedicamos a realzar la belleza natural de cada clienta con tratamientos de calidad."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/gallery/1.webp",
+      alt: "Mari Luz estética y bienestar - Imagen 1"
+    },
+    {
+      src: "/images/gallery/2.webp",
+      alt: "Mari Luz estética y bienestar - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Mari Luz estética y bienestar - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "Mari Luz estética y bienestar - Imagen 4"
+    },
+    {
+      src: "/images/hero.webp",
+      alt: "Mari Luz estética y bienestar - Imagen 5"
+    },
+    {
+      src: "/images/gallery/6.webp",
+      alt: "Mari Luz estética y bienestar - Imagen 6"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Necesito cita previa para los tratamientos?",
+      answer: "Aunque es recomendable pedir cita previa, en Mari Luz estética y bienestar hacemos todo lo posible por atenderte aunque vengas sin cita. Nuestras clientas valoran especialmente nuestra flexibilidad para encontrar huecos disponibles. Llámanos al 663 94 38 57 o escríbenos por WhatsApp y te daremos la mejor solución."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Qué servicios de manicura y pedicura ofrecéis?",
+      answer: "Ofrecemos cuidado completo de manos y pies con productos de alta calidad y acabados profesionales. Nuestras clientas llevan años confiando en nosotras para lucir uñas perfectas. Trabajamos con esmaltes duraderos y técnicas que garantizan resultados impecables en un ambiente limpio y profesional."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Hacéis diseño y depilación de cejas?",
+      answer: "Sí, somos especialistas en diseño de cejas y depilación facial. Nuestras clientas destacan la perfección en el resultado, la rapidez del servicio y los precios competitivos. Te dejamos las cejas perfectamente perfiladas para realzar tu mirada de forma natural y favorecedora."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué tratamientos faciales realizáis en Mari Luz?",
+      answer: "En Mari Luz estética y bienestar ofrecemos tratamientos faciales personalizados para cada tipo de piel: hidratación profunda, antiedad, luminosidad y más. Utilizamos productos premium y técnicas avanzadas para resultados visibles. Nuestro equipo analiza tu piel y diseña el protocolo perfecto para ti."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Tenéis servicio de depilación láser?",
+      answer: "Sí, contamos con tecnología láser de última generación para eliminación definitiva del vello. Es uno de nuestros tratamientos estrella junto con los faciales y la manicura. Los tratamientos son seguros, efectivos y adaptados a tu tipo de piel para resultados progresivos y permanentes."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Por qué vuestras clientas os recomiendan tanto?",
+      answer: "Nuestras más de 52 reseñas con 4.5 estrellas en Google reflejan lo que nos hace especiales: un trato cercano que genera confianza desde el primer momento, profesionalidad en todos los servicios, y la flexibilidad para adaptarnos a tus necesidades. Muchas clientas llevan años con nosotras porque se sienten mimadas y cuidadas en cada visita."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Dónde está ubicado vuestro centro en Albacete?",
+      answer: "Estamos ubicados en Albacete en un local limpio, acogedor y profesional donde encontrarás todos los servicios de estética y bienestar que necesitas. Para conocer nuestra dirección exacta y cómo llegar, llámanos al 663 94 38 57 y te indicamos cómo encontrarnos fácilmente."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Qué otros servicios ofrecéis además de manicura y cejas?",
+      answer: "En Mari Luz lo tienes todo: tratamientos faciales, depilación láser, tratamientos corporales, micropigmentación, extensiones de pestañas, manicura, pedicura y mucho más. Somos tu centro integral de belleza en Albacete donde puedes realizar todos tus tratamientos con un equipo de confianza que te conoce y te cuida."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Mari Luz estética y bienestar",
+    defaultTitle: "Mari Luz estética y bienestar | Centro de Estética Albacete",
+    defaultDescription: "Centro de estética en Albacete ⭐ 4.5 estrellas. Manicura, cejas, tratamientos faciales, depilación láser y más. Equipo profesional y cercano. ☎️ 663 94 38 57 ¡Pide cita!",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "centro estética Albacete",
+      "Mari Luz estética y bienestar",
+      "manicura Albacete",
+      "tratamientos faciales Albacete",
+      "depilación láser Albacete",
+      "diseño cejas Albacete",
+      "pedicura Albacete",
+      "tratamientos corporales Albacete",
+      "micropigmentación Albacete",
+      "extensiones pestañas Albacete",
+      "centro belleza Albacete",
+      "estética y bienestar Albacete"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Mari Luz estética y bienestar",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "C. Prta de Murcia, 15, 02002 Albacete, España, Albacete"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
+  heroHeadline: [
+    "Tu Centro de",
+    "Belleza",
+    "en Albacete"
+  ],
+  heroDescription: "En Mari Luz estética y bienestar encontrarás un espacio acogedor en Albacete donde cuidar tu imagen y bienestar. Nuestro equipo de profesionales te ofrece tratamientos personalizados con la última tecnología y un trato cercano que nos hace únicos. Más de 52 clientes nos avalan con 4.5 estrellas.",
+  specialty: "Manicura y Tratamientos Faciales",
   ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
+  ctaHeadline: "¿Lista para sentirte radiante y cuidada?",
+  ctaDescription: "Reserva tu cita en Mari Luz estética y bienestar. Te atendemos con flexibilidad horaria y hacemos todo lo posible por encontrarte hueco. Llámanos o escríbenos por WhatsApp.",
   statsLabel: "Clientas",
   schemaType: "BeautySalon",
   sectionCopy: {
@@ -300,8 +344,8 @@ export const clinic = {
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
     teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamDescription: "Experiencia y pasión al servicio de tu belleza"
+  }
 }
 
 export type Clinic = typeof clinic
